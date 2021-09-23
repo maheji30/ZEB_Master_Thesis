@@ -1,0 +1,114 @@
+\chapter{Conclusiones}
+
+
+En esta tesis se presentamos la simulaci'on num'erica usando el m'etodo de la ecuaci'on
+de Boltzmann en redes (EBR) de la levitaci'on ac'ustica de una part'icula s'olida circular
+bidimensional en una cavidad con un reflector plano y otra con un reflector redondeado 
+y concluimos que el m'etodo de la EBR es capaz de 
+simular correctamente el problema de levitaci'on ac'ustica de una part'icula s'olida.
+
+En el cap'itulo 2 presentamos como llegar a la ecuaci'on de Boltzmann en redes
+para la malla $D2Q9$  a partir de la ecuaci'on de transporte de Boltzmann. Tambi'en
+obtuvimos las ecuaciones hidrodin'amicas para un fluido compresible a partir de la 
+EBR usando una expansi'on de Chapman-Enskog. Presentamos brevemente
+la t'ecnica desarrollada por Aidun {\it et al}~\cite{aidun98} para la interacci'on
+de part'iculas s'olidas con el m'etodo de la  ecuaci'on de Boltzmann en redes. Adem'as,
+describimos el rebote hacia atr'as y el rebote hacia atr'as a mitad del camino para
+recrear la condici'on de no deslizamiento en las paredes as'i como la manera
+de agregar cantidad de movimiento para despu'es simular una fuente ac'ustica. 
+Ambas condiciones de frontera  las utilizamos para la simulaci'on de la levitaci'on ac'ustica.
+La validaci'on del m'etodo de la EBR se present'o en el ap'endice A, donde estudiamos tres
+problemas y comparamos los resultados de las simulaciones num'ericas con los reportados
+en la literatura.
+
+
+En el cap'itulo 3 presentamos los antecedentes de la levitaci'on ac'ustica y resultados
+de las simulaciones.
+Los trabajos de King~\cite{king34} y Gor'kov~\cite{gorkov62} fueron la base 
+para el comienzo del desarrollo de la teor'ia de la fuerza ac'ustica actuando
+sobre una esfera. Realizamos simulaciones num'ericas de la levitaci'on 
+ac'ustica en dos cavidades, una con un reflector plano, y la otra con un reflector
+redondeado optimizado para aumentar la fuerza del campo ac'ustico~\cite{xie01}.
+Encontramos los dos primeros modos resonantes para la cavidad redondeada monitoreando
+el valor de la velocidad m'axima. Todos los experimentos para ambas
+cavidades los realizamos en el segundo modo resonante. Los valores de las frecuencias de resonancia 
+encontrados difieren a los reportados por
+Xie {\it et al}. Esta diferencia es porque las simulaciones num'ericas las realizamos
+en dos dimensiones mientras que lo reportado por Xie {\it et al} es para una cavidad
+en tres dimensiones. Comprobamos
+que en ausencia de gravedad, las part'iculas se dirigen al nodo de presi'on en ambas
+cavidades, donde la
+sumatoria de fuerzas ac'usticas es cero. En el segundo conjunto de simulaciones
+mantuvimos constante la cantidad de movimiento agregada por la fuente ac'ustica
+y variamos la  relaci'on de densidades entre la part'icula y el fluido. 
+La posici'on de equilibrio de la part'icula, para ambas cavidades,
+se fue desplazando hacia abajo. En una peque~na zona, el desplazamiento de la 
+posici'on de equilibri'o sigui'o una l'inea recta. En la cavidad plana, las oscilaciones en el eje vertical
+disminuyen conforme la relaci'on de densidades aumenta, pero para la cavidad 
+redondeada, hay una zona donde la oscilaci'on de la part'icula en el eje vertical aumenta.
+Este comportamiento se debe a un desplazamiento en la frecuencia de resonancia debido
+a la presencia de la part'icula s'olida~\cite{leung82}. En el tercer conjunto
+de experimentos mantuvimos constante la densidad y variamos la cantidad de movimiento
+agregada por la fuente ac'ustica. Conforme aumentamos la cantidad de movimiento, la
+posici'on de la part'icula se desplaza hacia el nodo de presi'on m'as cercano. 
+Existe un valor cr'itico en la cantidad de movimiento para la cavidad redondeada  a
+partir del cual se forman dos nodos de presi'on a la misma altura. La aparici'on de los dos
+nodos de presi'on a la misma altura, coincide con un movimiento irregular en el eje
+vertical. La part'icula
+oscila horizontalmente alrededor de estos dos nodos presentando un comportamiento 
+complejo. Medimos el exponente de Lyapunov buscando que el sistema fuera sensible
+a las condiciones iniciales, pero el valor del exponente fue tan bajo que no nos permite
+decir de manera concluyente que el movimiento de la part'icula es ca'otico. Es posible
+que la trayectoria de la part'icula presente un caos transiente, sin embargo es necesario
+realizar m'as simulaciones para estudiar con detalle este fen'omeno.
+Todas las trayectorias 
+presentaron un movimiento oscilatorio con frecuencia de la fuente ac'ustica y sus arm'onicos.
+Bajo ciertas condiciones, aparece una segunda frecuencia m'as baja que la de la fuente
+ac'ustica tambi'en con sus arm'onicos.
+
+
+El espacio de par'ametros que estudiamos en este trabajo se redujo a la variaci'on
+de la cantidad de movimiento agregada por la fuente ac'ustica para un valor de la relaci'on
+de densidades de la part'icula y el fluido. En otro conjunto de simulaciones num'ericas
+estudiamos el comportamiento de la part'icula al variar la relaci'on de densidades y mantener
+fija la cantidad de movimiento agregada por la fuente ac'ustica. Existen al menos dos par'ametros
+importantes que son el radio de la part'icula s'olida y los par'ametros geom'etricos de la cavidad
+redondeada, los cuales se mantuvieron fijos. Con los resultados que hemos presentado, podemos concluir
+que el m'etodo de la ecuaci'on de Boltzmann en redes simula de manera correcta
+la interacci'on de una part'icula s'olida en un fluido compresible.
+
+Durante los estudios de doctorado se presentaron los siguientes trabajos en congresos:
+\begin{itemize}
+\item  	G. Barrios, R. Rechtman, Lattice Boltzmann equation for natural 
+	convection inside a partially heated cavity, Statistical Mechanics, 
+	Chaos and Condensed Matter, Roma, Italia, 22 al 24 de septiembre del 2004.
+
+\item  	G. Barrios del Valle, R. Rechtman, J. Rojas, R. Tovar, Convecci'on 
+	Natural en una Caja Parcialmente Calentada Usando el M'etodo de 
+	la Ecuaci'on de Boltzmann en Redes, X Congreso Nacional 
+	de la Divisi'on de Din'amica de Fluidos de la Sociedad Mexicana de
+	F'isica, Hermosillo Son., 25 al 29 de octubre del 2004.
+
+\item  G. Barrios, R. Rechtman, Levitaci'on Acu'stica usando el me'todo 
+	de la ecuacio'n de Boltzmann en redes, XI Congreso de la Divisi'on 
+	de Fluidos y Plasmas de la Sociedad Mexicana de F'isica, 
+	Guadalajara, Jal., 17 al 20 de octubre del 2005.
+\item  G. Barrios, R. Rechtman, Interacci'on de plumas t'ermicas 
+	usando el m'etodo de la ecuaci'on de Boltzmann en redes, 
+	XI Congreso de la Divisi'on de Fluidos y Plasmas de la Sociedad 
+	Mexicana de F'isica, Guadalajara, Jal., 17 al 20 de octubre del 2005.
+\item   G. Barrios, R. Rechtman, Formaci'on de Plumas T'ermicas 
+	usando el M'etodo de la Ecuaci'on de Boltzmann en Redes, 
+	XXI Congreso de la Divisi'on de Fluidos y  Plasmas 
+	de la Sociedad Mexicana de F'isica, San Luis Potos'i,
+	San Luis Potos'i, 19 de octubre del 2006
+
+\item 	G. Barrios, R. Rechtman, Natural Convection using the Lattice Boltzmann
+	Equation, 2006 APS Division of Fluid Dynamics 59th Annual Meeting, Tampa,
+	Flo., E. U., 19 al 21 de noviembre del 2006.
+\end{itemize}
+
+Tambi'en se escribi'o un art'iculo y se envi'o para su publicaci'on al 
+{\it Journal of Fluids Mechanics}, dicho art'iculo se encuentra
+en el ap'endice~\ref{articulo}.
+

@@ -1,0 +1,26 @@
+%GNUPLOT: LaTeX picture with Postscript
+\begin{picture}(0,0)%
+\includegraphics{eps/resonancia}%
+\end{picture}%
+\begingroup
+\setlength{\unitlength}{0.0200bp}%
+\begin{picture}(18000,5400)(0,0)%
+\put(2200,1650){\makebox(0,0)[r]{\strut{} 0.0}}%
+\put(2200,2232){\makebox(0,0)[r]{\strut{} 0.2}}%
+\put(2200,2814){\makebox(0,0)[r]{\strut{} 0.4}}%
+\put(2200,3395){\makebox(0,0)[r]{\strut{} 0.6}}%
+\put(2200,3977){\makebox(0,0)[r]{\strut{} 0.8}}%
+\put(2200,4559){\makebox(0,0)[r]{\strut{} 1.0}}%
+\put(2949,1100){\makebox(0,0){\strut{} 0.8}}%
+\put(4846,1100){\makebox(0,0){\strut{} 1.0}}%
+\put(6743,1100){\makebox(0,0){\strut{} 1.2}}%
+\put(8640,1100){\makebox(0,0){\strut{} 1.4}}%
+\put(10536,1100){\makebox(0,0){\strut{} 1.6}}%
+\put(12433,1100){\makebox(0,0){\strut{} 1.8}}%
+\put(14330,1100){\makebox(0,0){\strut{} 2.0}}%
+\put(16227,1100){\makebox(0,0){\strut{} 2.2}}%
+\put(550,3250){\rotatebox{90}{\makebox(0,0){\strut{}$v_{max}^{\ast}$}}}%
+\put(9825,275){\makebox(0,0){\strut{}$H^{\ast}/\pi$}}%
+\end{picture}%
+\endgroup
+\endinput

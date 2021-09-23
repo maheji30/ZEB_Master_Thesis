@@ -1,0 +1,104 @@
+\documentclass[showpacs,preprintnumbers,amsmath,amssymb,letter]{revtex4}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{pst-all} 
+\usepackage{SIunits} 
+\usepackage{calc}
+
+\normalsize
+\setlength{\voffset}{\baselineskip*5}
+\setlength{\textheight}{\baselineskip*53+\topskip}
+\setlength{\hoffset}{0pt}
+\setlength{\oddsidemargin}{40pt}
+\setlength{\evensidemargin}{82pt}
+\setlength{\textwidth}{380pt}
+
+\newcommand{\vc}{\mathbf c}
+\newcommand{\vrr}{\mathbf r}
+\newcommand{\vu}{\mathbf u}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{figure}
+
+\centering
+\begin{pspicture}(9,6)
+%\psgrid
+%
+\psline(1,1)(3,1)
+\psline(1,4)(3,4)
+\psline{<->}(1,3.75)(1,4.25)
+\psline{<->}(1.5,3.75)(1.5,4.25)
+\psline{<->}(2,3.75)(2,4.25)
+\psline{<->}(2.5,3.75)(2.5,4.25)
+\psline{<->}(3,3.75)(3,4.25)
+\rput[C](2,0){(a)}	
+%
+\psline[linewidth=0.1mm,linestyle=dashed]{|-|}(1,4.5)(3,4.5)
+\rput[C](2,4.7){$b^\ast$}
+\psline[linewidth=0.1mm,linestyle=dashed]{|-|}(.5,1)(.5,4)
+\rput[C](.3,2.5){$H^\ast$}
+%
+%linea superior de la cavidad (b)
+\psline(6,4)(6.5,4)(6.5,3.5)(7.5,3.5)(7.5,4)(8.5,4)
+%\psline (6,2)(6,1)(8,1)(8,2)
+\psline (6,2)(6,1)(5.5,1)
+%l'ineas de corte a la izquierda inferior
+\psline(5.6,1.1)(5.4,0.9)
+\psline(5.4,1.1)(5.2,0.9)
+% linea de extensi'on izquierda
+\psline (5.3,1)(5,1)(5,4)
+% linea de extensi'on derecha superior
+\psline (5.3,4)(5,4)
+\psline (5.5,4)(6,4)
+% linea de corte izquierda superior
+\psline(8.6,4.1)(8.4,3.9)
+\psline(8.8,4.1)(8.6,3.9)
+\psline(8.7,4)(9,4)(9,1)(8.7,1)
+
+%lineas de corte inferior izquierda
+\psline(5.6,4.1)(5.4,3.9)
+\psline(5.4,4.1)(5.2,3.9)
+
+%l'ineas de corte a la derecha inferior
+\psline (8,2)(8,1)(8.5,1)
+\psline(8.6,1.1)(8.4,0.9)
+\psline(8.8,1.1)(8.6,0.9)
+
+
+\psarc(7,3.5){1.8}{236}{304}
+\psline{<->}(6.75,3.25)(6.75,3.75)
+\psline{<->}(7.,3.25)(7.,3.75)
+\psline{<->}(7.25,3.25)(7.25,3.75)
+\rput[C](7,0){(b)}
+
+%medici'on total del ancho de la cavidad
+\psline{<->}(5,5)(9,5)
+\rput[C](7,5.5){$W^\ast$}
+
+%
+\psline[linewidth=0.1mm,linestyle=dashed]{|-|}(6.5,4.5)(7.5,4.5)
+\rput[C](7,4.7){$b^\ast$}
+\psline[linewidth=0.1mm,linestyle=dashed]{|-|}(5.5,3.5)(5.5,1.7)
+\rput[C](5.3,2.5){$H^\ast$}
+\psline[linewidth=0.1mm,linestyle=dashed]{|-|}(6,.8)(8,.8)
+\rput[C](7,.5){$B^\ast$}
+\psline[linewidth=0.1mm,linestyle=dashed]{|->}(7,4)(8,2)
+\rput[C](7.8,2){$R^\ast$}
+\psline[linewidth=0.1mm,linestyle=dashed]{|-|}(8.3,4)(8.3,3.5)
+\rput[C](8.6,3.5){$h_b^\ast$}
+\psline[linewidth=0.1mm,linestyle=dashed]{|-|}(8.3,1)(8.3,2)
+\rput[C](8.6,1.25){$h_a^\ast$}
+\psline[linewidth=0.1mm]{->}(4,3)(4,2)
+\rput[C](4,1.75){$\mathbf g$}
+%
+\end{pspicture}
+\end{figure}
+
+\end{document}
+
+
+
+

@@ -1,0 +1,123 @@
+\documentclass[spanish,10pt]{tesisIER}
+\usepackage{times}\renewcommand{\familydefault}{cmss}   % cambia el tipo de letra
+\usepackage{cite}                                      % se usa para la bibliograf'ia este no lo usa ulises
+\usepackage[activeacute]{babel}				% este es el delos acentos as'i
+\usepackage[utf8]{inputenc}				% este es el delos acentos normales así
+\usepackage{amsmath}					% fonts m'as bonitas en las ecuaciones
+%\usepackage{natbib}					% es el mero mero para la bibliografia
+\usepackage{amssymb}					% m'as fonts de matematicas
+\usepackage{appendix}					% te permite usar ap'endices
+\usepackage{amsfonts}					% m'as fonts
+\usepackage{graphicx}				% include figures 
+\usepackage{array}					% arreglos
+\usepackage{multirow}					% no estoy seguro
+\usepackage{color}					% para definir colores
+\usepackage{colortbl}					% m'as colores
+\usepackage{hhline}					% para dibujar lineas
+\usepackage{fancyheadings}				% este lo necesita el estilo
+\usepackage{blindtext}            % Dummy text
+
+%%	CAMBIO A MEXICANO
+
+\addto\captionsspanish{\renewcommand{\contentsname}{Contenido}}
+\addto\captionsspanish{\renewcommand{\listfigurename}{Lista de Figuras}}
+\addto\captionsspanish{\renewcommand{\listtablename}{Lista de Tablas}}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+
+
+%%	HEADERS
+\pagestyle{fancyplain}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\, #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}]%
+      {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{\leftmark}{\bfseries\leftmark}]%
+      {\fancyplain{}{\bfseries\thepage}}
+\cfoot[]{}
+
+
+
+
+
+%%	VECTORES
+\newcommand{\vc}{\textbf c}
+\newcommand{\BPSP}{\begin{pspicture}}
+\newcommand{\EPSP}{\end{pspicture}}
+\newcommand{\vF}{\textbf F}
+\newcommand{\vg}{\textbf g}
+\newcommand{\vG}{\textbf G}
+\newcommand{\vn}{\textbf n}
+\newcommand{\vN}{\textbf N}
+\newcommand{\vPi}{\textbf \Pi}
+\newcommand{\vq}{\textbf q}
+\newcommand{\vr}{\textbf r}
+\newcommand{\vu}{\textbf u}
+\newcommand{\vv}{\textbf v}
+\newcommand{\vU}{\textbf U}
+\newcommand{\BE}{\begin{equation}}
+\newcommand{\EE}{\end{equation}}
+
+%%	VARIOS
+\newcommand{\PROM}[1]{\left\langle #1\right\rangle}
+\newcommand{\lsim}{\mathrel{\hbox{\rlap{\lower.55ex\hbox{$\sim$}} \kern-.3em 
+ \raise.4ex \hbox{$<$}}}}
+
+
+
+
+%%	PATH FIGURAS
+\graphicspath{{figs/}}  %define el subdirectorio donde latex busca las figuras
+
+
+
+%%	VARIOS
+
+\title{Levitaci\'on de part\'iculas en ondas de sonido usando el m\'etodo de la ecuaci\'on de Boltzmann en redes}
+\author{Guillermo Barrios del Valle}
+
+%\includeonly{resumen}
+%\includeonly{introduccion}
+%\includeonly{ebrv2}
+%\includeonly{experimentosv2}
+%\includeonly{conclusiones}
+%\includeonly{validacion}
+
+
+
+\begin{document} 
+%
+\spanishdecimal{.}
+%
+%\input{capitulos/portada}
+% 
+%
+\frontmatter
+%
+\input{capitulos/agradecimientos}
+%
+\tableofcontents
+%
+\listoffigures
+%
+\include{capitulos/resumen}
+%
+\mainmatter
+\include{capitulos/introduccion}
+\include{capitulos/ebrv2}
+\include{capitulos/experimentosv2}
+\include{capitulos/conclusiones}
+%
+%
+\appendix
+\include{validacion}
+%
+\include{articulo}
+%
+%
+%
+\backmatter
+\bibliographystyle{unsrt} %unsrt,alpha,abbrv,plain
+\bibliography{biblio-doctorado}
+%
+%
+\end{document}
