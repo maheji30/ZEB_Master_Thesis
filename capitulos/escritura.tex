@@ -1,0 +1,70 @@
+\chapter{Escritura}
+\label{chap:escritura}
+
+
+\section{\LaTeX en la vida real}
+
+
+
+En el Capítulo~\ref{chap:escritura} veremos como escribir secciones, subsecciones,  referencias a capítulos o secciones, citas con bibtex, ecuaciones, listas y tablas.
+
+\section{Secciones y subsecciones}
+\label{sec:secciones}
+
+Esta es una sección.
+\subsection{Esta es una subsección}
+ A manera personal no recomiendo usar más allá de subsections.
+
+\subsubsection{Sub sub sección}
+A partir de este nivel, Latex automáticamente deja de numerar y tampoco aparecerán en el índice.
+
+
+
+\section{Ecuaciones}
+
+Un estilo para escribir ecuaciones, es considerarlas como texto, entonces, la ecuación de aceleración es
+\begin{equation}
+a  = \frac{dv}{dt},
+\label{eq:aceleracion}
+\end{equation}
+donde $a$ es la aceleración [$m/s^2$], $v$ es la velocidad [$m/s$] y $t$ el tiempo [$s$]. Nota que no hay un renglón vacio entre la ecuación y la continuación del texto, de esa manera no aparecerá una sangría donde no la quieres.
+
+En la Ec.~\ref{eq:aceleracion} estamos presentando la definición de la aceleración, y te recominedo usar etiquetas agregando algo que te de referencia a lo que es, una tabla (table:palabra), ecuación (eq:palabra), figura (fig:palabra) donde la palabra describe la ecuación, de esa manera, cuando el programa que usas autocomplete y tengas una lista interminable, te será más fácil identificar la etiqueta adecuada.
+
+\section{Bibtex y yo}
+
+
+Lo ideal es que uses bibtex para administrar tus citas, te recomiendo que revises el archivo bibliografia.bib y uses un editor de \LaTeX para poder agregar campos bibliográficos con un simple botonazo. Para citar correctamente hay que usar la tilde pegada a la última palabra~\cite{he97}. De esa manera, la cita y la última palabra forman un bloque y el paquete hyphenation no las separa de ser necesario, además da una separación muy linda visualmente.  Recuerda que puedes citar muchos autores al mismo tiempo y bibtex los va acomodar~\cite{ansumali00,buick98,buick98a,guo00}. Todos los anteriores hicieron trabajos sobre levitación acústica, por si te da curiosidad saber quienes son.
+
+
+
+\subsection{Compilando con bibtex y más}
+
+Recuerda correr pdflatex y luego bibtex y luego otra vez dos veces pdflatex para que los cambios en tu bibliografía se vean reflejados.  Esto es necesario porque en la primer compilación de pdflatex se crea el archivo bbl y luego se actualiza en la segunda compilación.
+
+Si quieres comenzar un nuevo párrafo,  solo debes dejar una línea y el párrafo nuevo se distingue por la sangría, no uses doble diagonal para poner un espacio extra, esa es una mala práctica.
+
+
+
+Por cierto, si notas que los margenes están desiguales, es por qué esta tesis está configurada para imprimirse por los dos lados, cuando las tesis tenían que ser impresas a fuerza, eso lo puedes desactivar en el preambulo de main.tex, actualmente está
+\begin{verbatim}
+\documentclass[10pt,twoside]{tesisIER}
+\end{verbatim}
+y lo puedes arreglar usando:
+\begin{verbatim}
+\documentclass[10pt,oneside]{tesisIER}
+\end{verbatim}
+para que no se vea con los margenes desiguales. Es importante seleccionar el twoside si imprimes por los dos lados de la hoja. 
+
+\section{Editores de \LaTeX}
+\subsection{TexMaker}
+\subsection{Emacs}
+\subsection{Vim}
+
+
+\subsection{\LaTeX y Python, la vida es bella}
+
+
+\section{Conclusiones}
+
+

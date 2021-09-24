@@ -1,20 +1,17 @@
-\documentclass[spanish,10pt]{tesisIER}
+\documentclass[10pt,twoside]{tesisIER}
 \usepackage{times}\renewcommand{\familydefault}{cmss}   % cambia el tipo de letra
 \usepackage{cite}                                      % se usa para la bibliograf'ia este no lo usa ulises
-\usepackage[activeacute]{babel}				% este es el delos acentos as'i
+\usepackage[spanish,activeacute]{babel}				% este es el delos acentos as'i
 \usepackage[utf8]{inputenc}				% este es el delos acentos normales así
 \usepackage{amsmath}					% fonts m'as bonitas en las ecuaciones
 %\usepackage{natbib}					% es el mero mero para la bibliografia
-\usepackage{amssymb}					% m'as fonts de matematicas
 \usepackage{appendix}					% te permite usar ap'endices
 \usepackage{amsfonts}					% m'as fonts
 \usepackage{graphicx}				% include figures 
-\usepackage{array}					% arreglos
-\usepackage{multirow}					% no estoy seguro
 \usepackage{color}					% para definir colores
 \usepackage{colortbl}					% m'as colores
 \usepackage{hhline}					% para dibujar lineas
-\usepackage{fancyheadings}				% este lo necesita el estilo
+\usepackage{fancyheadings}				% este lo necesita el estilo tesisIER.cls
 \usepackage{blindtext}            % Dummy text
 
 %%	CAMBIO A MEXICANO
@@ -72,7 +69,7 @@
 
 %%	VARIOS
 
-\title{Levitaci\'on de part\'iculas en ondas de sonido usando el m\'etodo de la ecuaci\'on de Boltzmann en redes}
+\title{Mi tesis en \LaTeX sin sufrir$^{\text{mucho}}$ en el proceso}
 \author{Guillermo Barrios del Valle}
 
 %\includeonly{resumen}
@@ -103,21 +100,19 @@
 %
 \mainmatter
 \include{capitulos/introduccion}
-\include{capitulos/ebrv2}
-\include{capitulos/experimentosv2}
-\include{capitulos/conclusiones}
+\include{capitulos/escritura}
+\include{capitulos/figuras}
+%\include{capitulos/experimentosv2}
+%\include{capitulos/conclusiones}
 %
 %
 \appendix
-\include{validacion}
-%
-\include{articulo}
-%
+\include{capitulos/overleaf}
 %
 %
 \backmatter
 \bibliographystyle{unsrt} %unsrt,alpha,abbrv,plain
-\bibliography{biblio-doctorado}
+\bibliography{bibliografia}
 %
 %
 \end{document}
