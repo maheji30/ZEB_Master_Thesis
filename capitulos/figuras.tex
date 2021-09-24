@@ -6,7 +6,32 @@
  
  \section{Tipos de figuras y sus editores}
 \subsection{Configuración de ambiente y posicionamiento}
-
+ En la Figura~\ref{fig:IER} se muestra una captura de la página web del IER-UNAM.
+ \begin{figure}
+ \centering
+ \includegraphics[scale=0.2]{ier_homepage}
+ \caption{	
+ Captura tomada de la página web del IER-UNAM.
+ \label{fig:IER}
+ }
+ \end{figure}
+ 
+ La figura se incluyó con el siguiente código
+ \begin{verbatim}
+ \begin{figure}
+ \centering
+ \includegraphics[scale=0.2]{ier_homepage}
+ \caption{	
+ Captura tomada de la página web del IER-UNAM.
+ \label{fig:IER}}
+ \end{figure}
+ \end{verbatim}
+ 
+Una práctica muy común que veo es que usan 
+ \begin{verbatim}
+ \begin{figure}[!ht]
+ \end{verbatim}
+ que le está diciendo a latex forzar a poner la figura en la misma página que el texto y en la parte superior de la página. Te recomiendo no usar esto y darle oportunidad a latex de acomodar las figuras de acuerdo a su criterio, además conforme tengas más texto, las figuras irán cambiando su lugar y se verá mejor.
 \subsection{Figuras en pdf}
 \subsection{Figuras en png/jpg}
 \subsection{Figuras en epslatex}
