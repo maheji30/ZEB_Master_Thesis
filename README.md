@@ -21,3 +21,5 @@ Hoy 24 de septiembre de 2021, libero publicamente  esta plantilla,
 esperando irla documentando completamente, pero también esperando
 tú contribución, ya sea haciendo una petición o pregunta, o una
 aportación, que por supuesto será documentada y agradecida,
+
+P.D. No se preocupen, la primera actualización será incluir una portada.
