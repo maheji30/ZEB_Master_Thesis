@@ -2,7 +2,7 @@
 
 
 En el IER-UNAM no existen, afortunadamente, requisitos obligatorios
-de formato para escribir y publicar la tesis.
+de formato en tipografía para escribir y publicar la tesis. Para posgrado existe una portada obligatoria y estamos investigando si lo hay para la LIER.
 
 A lo largo de mis años como profesor he visto muchas malas
 prácticas al escribir la tesis en latex, desde problemas de
