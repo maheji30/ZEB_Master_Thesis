@@ -73,7 +73,8 @@ La clave para escribir tablas como la mostrada en~\ref{tabla:sencilla} es que de
 
 
 
-Si tienes una tabla muy larga como la Tabla~\ref{tabla:larga} , donde se decidió rotar una página para insertarla y que se pueda usar esta página en modo apaisado.
+Si tienes una tabla muy larga como la Tabla~\ref{tabla:larga} , donde se decidió rotar una página para insertarla y que se pueda usar esta página en modo apaisado. No te recomiendo achicar la tabla, habemos quienes sufrimos mucho con la letra chiquita. Para rotar la página se utiliza el paquete landscape y se pone en un ambiente lo que se desea poner en la página o páginas rotadas.
+
 
 \begin{landscape}
 \begin{table}
@@ -93,6 +94,82 @@ jabon platos       &    1               & 9.99      &  Esta es una descripci\'on
 }
 \end{table}
 \end{landscape}
+
+
+Puede ser que tengan una tabla tan larga que requieras más de una página, para esos casos usa el ambiente longtable que lo proporciona el paquete con el mismo nombre.
+
+\begin{longtable}{lcr}
+Item                   &    Cantidad    & Precio \\
+                          &    [-]              & [mxn]  \\
+\hline
+\hline
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+\hline
+\hline
+%\end{tabular}
+\caption{ Esta es mi lista de super de hoy.
+\label{tabla:dospaginas}
+}
+\end{longtable}
+
+
 
 \section{Bibtex y yo}
 
