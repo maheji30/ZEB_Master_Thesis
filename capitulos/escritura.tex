@@ -47,6 +47,53 @@ donde $a$ es la aceleración [$m/s^2$], $v$ es la velocidad [$m/s$] y $t$ el tie
 
 En la Ec.~\ref{eq:aceleracion} estamos presentando la definición de la aceleración, y te recominedo usar etiquetas agregando algo que te de referencia a lo que es, una tabla (table:palabra), ecuación (eq:palabra), figura (fig:palabra) donde la palabra describe la ecuación, de esa manera, cuando el programa que usas autocomplete y tengas una lista interminable, te será más fácil identificar la etiqueta adecuada.
 
+\section{Tablas}
+\label{sec:tablas}
+
+Las tablas pueden causar dolores de cabeza, especialmente cuando son muy largas, y un editor de LaTeX se agradece para crearlas. Una tabla sencilla es la mostrada en~\ref{tabla:sencilla}.
+
+\begin{table}
+\centering
+\begin{tabular}{lcr}
+Item                    &    Cantidad    & Precio \\
+                          &    [-]              & [mxn]  \\
+\hline
+\hline
+bolsa croquetas  &    1               & 999.99 \\
+jabon platos       &    1               & 9.99 \\
+\hline
+\hline
+\end{tabular}
+\caption{ Esta es mi lista de super de hoy.
+\label{tabla:sencilla}
+}
+\end{table}
+
+La clave para escribir tablas como la mostrada en~\ref{tabla:sencilla} es que desde tu editor de texto la puedas ver estructurada, as\'i ser\'a m\'as f\'acil ver los errores. Como puedes ver, LaTeX tambi\'ien decide donde poner las tablas, te recomiendo no forzar nada. No olvides agregar un rengl\'on para las unidades.
+
+
+
+Si tienes una tabla muy larga como la Tabla~\ref{tabla:larga} , donde se decidió rotar una página para insertarla y que se pueda usar esta página en modo apaisado.
+
+\begin{landscape}
+\begin{table}
+\centering
+\begin{tabular}{lcrl}
+Item                    &    Cantidad    & Precio  & Descripci\'on  \\
+                          &    [-]              & [mxn]   &                       \\
+\hline
+\hline
+bolsa croquetas  &    1               & 999.99  & Esta es una descripci\'on muy larga para hacer una prueba de una tabla larga\\
+jabon platos       &    1               & 9.99      &  Esta es una descripci\'on muy larga para hacer una prueba de una tabla larga\\
+\hline
+\hline
+\end{tabular}
+\caption{ Esta es una  lista muy larga de ejemplo en una página rotada.
+\label{tabla:larga}
+}
+\end{table}
+\end{landscape}
+
 \section{Bibtex y yo}
 
 
@@ -82,5 +129,4 @@ para que no se vea con los margenes desiguales. Es importante seleccionar el two
 
 
 \section{Conclusiones}
-
 
