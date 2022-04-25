@@ -3,16 +3,73 @@
 
  
  
- \section{Introducción}
+\section{Introducción}
 
 
-Este documento reune mi experiencia en \LaTeX desde el 2001 conocí Linux y el software libre. Además, espero se enriquezca con las peticiones que se hagan al autor por medio de GitHub, correo electrónico.
-
-En el Capítulo~\ref{chap:escritura} veremos como escribir secciones, subsecciones,  referencias a capítulos o secciones, citas con bibtex, ecuaciones, listas y tablas.
-
-En el Capítulo~\ref{chap:figuras} será sobre las diferentes formas de incluir esquemas y figuras.
-
-Dado que ahora muchos se han mudado a Overleaf, en el Apéndice~\ref{chap:overleaf} encontrarán las recomendaciones para trabajar en esa plataforma.
 
 
-Recuerda revisar el código fuente para ver  como se hacen las cosas, descarga, comparte, comenta y te invito a hacer una contribución a este proyecto.
+
+
+\subsubsection{Zero Energy Buildings: A Critical Look at the Definition}
+
+
+El objetivo de este documento es explorar el concepto de energía cero: qué significa y por qué se necesita una definición clara y medible. Se estudian cuatro definiciones bien documentadas. También se muestra de forma jerarquica las actividades recomendadas para lograr un ZEB. Las definiciones se aplican a un conjunto de edificios de bajo consumo energético y se explica la influencia que tiene cada definición en el diseño del ZEB. Posteriormente se muestran las ventajas y desventajas para lograr cada definición. Este estudio muestra que la forma en que se define el objetivo de energía cero afecta las elecciones que aplican los diseñadores en el edificio para lograr este objetivo.
+
+
+Elementos importantes a considerar: Para calcular los ahorros del ZEB diseñado se necesita un caso base para comparar, el cual podría encontrarse en ASHRAE 2001, en la sección de Edificios convencionales que cumplen mínimamente con el código de energía.
+
+\begin{itemize}
+
+\item Net-Zero Energy Buildings: A Classification System Based on Renewable Energy Supply Options
+\item Lessons Learned from Case Studies of Six High-Performance Building
+\item Definition of a Zero Net Energy Community
+\item A Common Definition for Zero Energy Buildings
+\item Net-Zero Energy Buildings: the influence of definition on greenhouse gas emissions
+
+\end{itemize}
+
+
+Este estudio compara la efectividad de las cuatro definiciones NZEB para reducir las emisiones operativas de un edificio. Se utiliza una geometría simple ubicada en dos ciudades diferentes, es decir, Toronto y Miami, con cuatro comportamientos energéticos diferentes, los cuales son simulados en OpenStudio. Se encontró que, para ambas ubicaciones, el uso de un balance NZEC conduce a emisiones más bajas, una reducción del 102-145$\%$ para Toronto y del 99-117$\%$ para Miami. La definición de NZEE, contrariamente a su designación, es la menos efectiva para reducir las emisiones de GEI, con un 86$\%$ para Toronto y un 89-94$\%$ para Miami.
+
+
+\textbf{Elementos importantes a considerar:} En el árticulo se muestran las ecuaciones más importantes para desarrollar cada una de las definiciones.
+\begin{itemize}
+\item A review of net zero energy buildings in hot and humid climates: Experience learned from 34 case study buildings
+\item Ten questions about zero energy buildings: A state of the art review.
+\end{itemize}
+
+
+Este documento tiene el objetivo de identificar, desarrollar y comprender las características principales de los edificios energía cero; para ello, se realiza una revisión del estado del arte de la temática, donde se seleccionaron 97 artículos considerados de mayor relevancia, en el período de 2006 a 2020. La metodología consistió en un análisis de esos textos a partir de diez preguntas formuladas para abordar la temática. Las preguntas hacen referencia a definiciones (P1), sustentabilidad (P2), tecnologías involucradas (P3), emisiones (P5), energía (P4) (P6) (P7), normativas (P8), cambio climático (P9) y proyecciones futuras (P10). El trabajo permite concluir que los ZEB se integran de manera holística en la transformación hacia un futuro renovable y sustentable en materia de soluciones energéticas y, a su vez, tienen potencial para ser implementados en diferentes posiciones geográficas y climáticas.
+
+
+\textbf{Elementos importantes a considerar:} Los consumos para calentamiento y enfriamiento suelen ser los más altos en los edifcios, por lo que la literatura revisada propone conseguir ahorros en las ZEB de entre un 25 $\%$ y un 50$\%$ respectivamente, limitando ambas a 30 $\frac{kWh}{m^{2}*year}$.
+
+
+ \textbf{A Guide to Zero Energy and Zero Energy Ready K–12 Schools}
+
+
+Este documento describe los pasos para crear una escuela ZE. Estos pasos sirven como guía para garantizar que una escuela logre su objetivo de diseño ZE y mantenga su estado ZE después de que esté ocupada y en funcionamiento. Los temas que se tocan en los pasos son: Evaluación de las necesidades de una edificación, inetgración de metas de energía cero en el diseño, gestión de metas en las fases de diseño y operación, evaluación del desempeño, etc. Cada paso también incluye una experiencia acerca del paso. Estas breves anécdotas fueron proporcionadas por los distritos escolares participantes y ofrecen una breve sinopsis de la experiencia del distrito con ese paso.
+
+\textbf{Análisis de los efectos ambientales, energéticos y económicos entre un modelo de construcción sustentable contra uno convencional en Querétaro.}
+
+El documento se centra en realizar un análisis de los efectos ambientales, energéticos y económicos resultantes de la construcción de edificaciones utilizando un modelo de sustentabilidad comparado contra un modelo convencional, con la finalidad de obtener un indicador del costo al utilizar un modelo de construcción sustentable para una vivienda y ver si es posible que no sea mayor al 15$\%$ contra  utilizar un modelo de construcción tradicional. Se plantearon 3 modelos de vivienda tradicional y 3 modelos de vivienda sustentable para hacer comparaciones entre ellos. La simulación energética y térmica de todos los casos se realizó en EnergyPlus. De comparar el modelo de vivienda sustentable mejor equipado con el modelo de vivienda tradicional peor equipado el porcentaje de incremento en costo fue de 14.75\$%$.
+
+
+\textbf{Elementos importantes a considerar:} Factores de conversión Site-to-Source, factores por emisión de CO2, Schedules de ocupación y cargas residenciales y tomar en cuenta la inflación y el VPN en el cálculo de los ahorros.
+
+
+\subsubsection{Methodology for the validation of thermal simulations of a real building}
+
+Este documento muestra una metodología para validar simulaciones térmicas de un edificio real. También se incluyen las metricas de comparación y los rangos de tolerancia, ambos obtenidos de la literatura. Se utiliza como caso de estudio un edificio del IER. Se propone un caso base, un caso donde se usa protección solar y uno donde no se usa. Los resultados incluyen gráficos para la comparación cualitativa de la medición y los dos casos simulados. Se realizó una comparación cuantitativa utilizando las métricas más comunes descritas en la revisión de la literatura. En ambas comparaciones, el resultado obtenido para el caso 2 es mejor que para el caso 1, esto sugiere que las protecciones solares del edificio están absorbiendo calor, debido al color rojo, y están transmitiendo calor por conducción y radiación al interior del edificio.
+
+
+\textbf{Elementos importantes a considerar:} Es probable que para la tesis de ZEB se necesiten recolectar datos del edificio de interés, por lo cual se necesitará realizar una correcta validación. Esta tesis puede ser una buena guía por si no recuerdo muy bien como era la metodología. 
+
+
+Thermal comfort studies.  El objetivo de este escrito es explorar la evaluación de confort térmico que provee el uso de estrategias pasivas y de bajo consumo de energía a los ocupantes en edificios naturalmente ventilados. En este trabajo se propone una metodología para la validación de simulaciones térmicas, cuyos resultados  muestran que el modelo del edificio obtenido con el proceso de calibración es aplicable a distintas épocas del año, condiciones de ocupación y ventilación, así como obtener resultados precisos de evaluación del confort térmico usando las estrategias de ventilación nocturna y cambio en la absortnacia de la envolvente. La tesis tambiéon proponer una metodología para la evaluación del confort térmico, acústico y lumínico en la etapa de diseño del nuevo edificio del IER, para la cual se propone utilizar el método del voto medio predicho extendido.
+
+
+\textbf{Elementos importantes a considerar:} Se utiliza la metodología de validación de la tesis de licenciatura. El documento contiene información importante acerca del PMVe.
+
+
+

@@ -1,6 +1,8 @@
-\documentclass[10pt,twoside]{tesisIER}
+\documentclass[10pt,oneside]{tesisIER}
 \usepackage{times}\renewcommand{\familydefault}{cmss}   % cambia el tipo de letra
-\usepackage{cite}                                      % se usa para la bibliograf'ia este no lo usa ulises
+%\usepackage{cite}                                    
+\usepackage{natbib}
+ % se usa para la bibliograf'ia este no lo usa ulises
 \usepackage[spanish,activeacute]{babel}				% este es el delos acentos as'i
 \usepackage[utf8]{inputenc}				% este es el delos acentos normales así
 \usepackage{amsmath}					% fonts m'as bonitas en las ecuaciones
@@ -116,7 +118,9 @@
 %
 %
 \backmatter
-\bibliographystyle{unsrt} %unsrt,alpha,abbrv,plain
+%\bibliographystyle{unsrt} %unsrt,alpha,abbrv,plain
+
+\bibliographystyle{abbrvnat}
 \bibliography{bibliografia}
 %
 %
