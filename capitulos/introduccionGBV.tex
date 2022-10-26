@@ -1,27 +1,279 @@
 
-
-
 \chapter{Introduction}
 \label{chap:introduccion}
 
 
 \section{Energy, emissions and buildings}
-plantear el contexto mundial y nacional de edificaciones en energ'ia y emisiones. 
+
+According with \citet{klepeis2001national} and \citet{world2014combined}, most of the people in the world will spend 90\% of their life in in indoor spaces, also known as buildings. That is the main reason why buildings and buildings construction sectors combined are responsible for 30\% of the global final energy consumption and 27\% of total energy sector emissions \citep{iea-2022}. In Mexico, residential and commercial sectors combined consume 24\% of the final energy \citep{sener-2022} and release 3.9\% of the CO2 emissions of the country \citep{mexico2015inventario}. Energy consumption and CO2 emissions generation by buildings will continue to increase until building owners implement an efficient way to design and operate their constructions. Since long time ago, several organizations around the world have realized that they can strongly face energy consumption increasing, climate change an the carbon footprint of human activities by changing the way we make buildings.
+
+Building energy researchers agreed to name Net Zero Energy Building (NZEB) to those constructions that reduces their energy consumption by implementing energy efficiency measures, so the rest of the energy needs can be supplied by using renewable technologies \citep{torcellini2006zero}. In Mexico, there are more and more organizations that use construction regulations to make their buildings energy efficient and emission savers. One of those organization is National Autonomous University of Mexico (UNAM by its acronym in spanish), which account with several campus around the country. UNAM is aware that Mexico is one of the nations where renewable energies can have more opportunities to grow, so in 2011 the University decided to open Renewable Energy Institute (IER by its acronym in Spanish), a campus where  renewable energy engineering is the only degree. Because renewable energies represent a key strategy for today's and future society, the interest for studying the degree is expected to has a lot of growth, so IER has plans to make a new building to be able to receive a larger number of students and teachers. 
+
+As it was mentioned before, the use of renewable technologies is substantial to achieve NZEBs, so a Energy Building Group was also created in IER. This group is participating in the IER's new building project, which bioclimactic design, thermal comfort studies, instrumentation and control of equipments, energy efficiency measures and renewable technologies are being implemented. Although the new building at IER may appear to have the elements that characterize a NZEB, this information is not enough to determine if they achieve the NZEB status so, ¿how to know if the new buiding at IER is a NZEB? The general objective of this thesis is to evaluate NZEB definitions in the new building at IER-UNAM in Temixco.
+
+The specific objectives of thus thesis are to provide a literature review about the concept of NZEB (Net-Zero Energy Buildings; to evaluate the NZEB definitions using a numerical model of the IER's new building; to Implement the PMV and ePMV within the methodology; to propose and evaluate strategies for passive design, energy efficiency and renewable generation that allow meeting the NZEB definitions; to propose a guide that can be taken as a reference in future building construction projects at Mexico  so that they can achieve NZEB status.
 
 
-objetivos generales y particulares
 
-
-\section{review}
+\section{NZEB definitions}
  
- solo decir que existen 4 definiciones y cuales son
+According with \citet{torcellini2006zero}, a NZEB is a construction that uses efficiency gains in order to reduce the building's energy consumption so the rest of the energy needs can be supplied by renewable technologies. Because renewable generation largely depends on the environmental conditions of the place, it is difficult to ensure that the technology will always produce the necessary energy to satisfy the demand of the building; sometimes there will be more energy than needed and sometimes there will be less energy than needed. In order to ensure the energy supply for buildings, it is recommended that NZEB are connected to the grid, so when the generation is greater than the building's loads, excess electricity is exported to the grid and it can offset later energy use. The solution of this situation could be the storage of the generated energy excesses, but storage technologies still being expensive, so the use of the grid is substantial to achieve a NZEB.
 
+\citet{torcellini2006zero} propose four definitions for NZEB: Net Zero Site Energy (site-NZEB), Net Zero Source Energy (source-NZEB), Net Zero Energy Costs (cost-NZEB) and Net Zero Energy Emissions (emission-NZEB). Before describing the definitions it is important to know about source energy, which refers to the primary energy used to generate and deliver the energy to the site. 
 
+To meet site-NZEB definition, the building's renewable generation must be equal or greater than the total energy consumption. A limitation of this definition is that source energy values of the fuels are not considered, it is the same one energy unit of electricity than one energy unit of natural, when is very well known that electricity generation and distribution process involves more energy than in natural gas.
 
+To meet source-NZEB definition, the building's renewable generation must be equal or greater than the total energy consumption, but in this case, primary energy used to generate and deliver each fuel to the building is considered. In other words, in this definition the source energy values are considered. To calculate a building's total source energy, generated and consumed energy are multiplied by the appropriate site-to-source conversion factors (StSF). 
+
+To meet cost-NZEB, the earned money by exporting renewable electricity to the grid must be equal or greater than the spent money for using imported electricity and natural gas in the building. 
+
+Finally, to meet emission-NZEB, the building saving emissions must be equal or greater than produced emissions by using fossil energy sources. 
+
+The use of each definition depends on the project goals that the building owner has. 
+
+\section{Predicted Mean Vote Model}
+
+\citet{fanger1970thermal} developed the Predicted Mean Vote (PMV) model to anticipate the thermal sensation mean vote of occupants in a space with a seven point scale, where -3 means a very cold sensation, 0 is a comfortable sensation and +3 is a very hot sensation. The PMV model agrees well in buildings with Heating, Ventilation and Air-conditioning (HVAC) systems, situated in cold, temperate and hot climates, during both summer and winter. The disadvantage of the model is that, when it is used in buildings with no HVAC systems, the prediction of the vote is overestimated, in other words, the model predicts a thermal sensation vote warmer than it really is.
+
+This overestimated vote occurs due the psychological adaptation of the occupants, which are people who are used to live in hot climates, so they are likely to judge a hot environment as less unacceptable than people who are used to HVAC systems. \citep{fanger2002extension} propose that this psychological adaptation can be expressed by an expectation factor, \textit{e}. This factor can take values equal or greater than 0.5 and equal or less than 1, where 1 is the appropriate value for buildings with HVAC systems. For buildings without HVAC systems, the expectation factor depends on the duration of hot climate during the year and whether the occupant is used to visit near buildings with HVAC systems. Therefore, if the building is in a region with hot climate all the year and the occupant is not used to visit near buildings with HVAC systems, \textit{e} may be 0.5 and it can be 0.7 if there are many other buildings with air-conditioning. 
+
+A second factor that contributes to this overestimating is the physiological adaptation. In many field studies in office, metabolic rate is estimated with a survey that identifies the percentage of time the person was sitting, standing, or walking. This method doesn't acknowledge the fact that people unconsciously tend to slow down their activity when they feel hot. They adapt to the hot environment by slowing down their metabolic rate. Therefore, a reduced metabolic rate should be inserted in the PMV calculation. \cite{} created a global database of thermal comfort field experiments, where they identified that metabolic rates are reduced by 6.7\% for each PMV scale unit above neutrality. Once the reduced metabolic rate is obtained, it must be used to recalculate the PMV, which is finally multiplied by the appropriate \textit{e}. This method, where psychological and physiological thermal adaptations are acknowledged to improve the accuracy of PMV in building without HVAC systems, is called extended Predicted Mean Vote (ePMV).
 
 
 \chapter{Methodology}
+
+
 es el procedimiento, ecuaciones y variables que necesitas para hacer los c'alculos, parametros de evaluacion y metricas
+
+Procedimiento
+
+\begin{enumerate*}
+\item Collect the information to calculate de definitions.
+\\\\
+Site:
+
+\begin{equation}
+RES_{size} = Elec + NG
+\end{equation}
+
+Where
+\begin{itemize}
+\item $RES_{size}$ is the size of the renewable energy system (total energy generated by renewable energy system in a year) [kWh];
+\item Elec is the energy consumed in form of electricity [kWh];
+\item NG is the energy consumed in form of natural gas [kWh].
+\end{itemize}
+
+
+To solve                
+    
+\begin{itemize}
+\item Electricity and Liquified Petroleum Gas (LP Gas) consumption in the new bulding at IER.
+\item Loads and Schedules in the simulation.
+\item LP Gas unit conversion to kWh. 
+
+\item Example: Suppose that every month a LP Gas tank of 30 kg is used. The density of LP Gas is 540 kg/m3. Hence, you have 18 m3 of LP Gas. LP Gas calorific value is 97,260 kJ/m3. Therefore, from one tank, you can obtain 1750680 KJ, which is equal to a consumption of 486.3 kWh per month.
+\end{itemize}
+
+Source:
+\begin{equation}
+RES_{size} \times StSF_{Elec} = (Elec \times StSF_{Elec}) + (NG \times StSF_{NG}) 
+\end{equation}
+
+Where
+\begin{itemize}
+\item $StSF_{Elec}$ is the Site-to-Source Factor of electricity [-];
+\item $StSF_{Elec}$ is the Site-to-Source Factor of natural gas [-].                                    
+\end{itemize}
+
+
+To solve
+\begin{itemize}
+
+\item Investigate how to calculate the Mexico StSFs for electricity and LP Gas. 
+\item Energy Star is a program of the United States Environmental Protection Agency (EPA) created in 1992 that is responsible for providing simple and credible information that consumers trust to make well-informed decisions. Below are the equations that Energy Star use to calculate Electricity and Natural Gas StSFs for the United States and Canada.
+
+
+\begin{equation}
+StSF_{Elec_{USA}} = \frac{PECG}{NG - TDL}
+\end{equation}
+
+Where
+\begin{itemize}
+\item $StSF_{Elec_{USA}}$ is the Site to Source Factor of Electricity for United States [-];
+\item PECG is  the Primary Energy Consumed for Generation [quad];
+\item NG is Net Generation [quad];
+\item TDL are Transmission and Distribution Losses [quad].
+\end{itemize}
+
+A quad is a energy unit equal to $10^15$ BTU or  1,055 $\times 10^18$ Joules in SI units.
+
+\begin{equation}
+StSF_{Elec_{CAN}} = \frac{ FCPG +  AGR}{ESC + NE}
+\end{equation}
+
+Where
+\begin{itemize}
+\item $StSF_{Elec_{USA}}$ is the Site to Source Factor of Electricity for Canada [-];
+\item FCPG  is the Fuel Consumed for Power Generation [TJ]; 
+\item AGR is the Amount Generated with Renewables [TJ];
+\item ESC is the Electricity Sold to Customers [TJ];
+\item NE are the Net Exports [TJ].
+\end{itemize}
+
+
+A TJ is a energy unit equal to a billion of Joules or $10^12$ Joules.
+
+\begin{equation}
+StSF_{NG_{USA}} = \frac{ PDU + PFU + DC}{Delivery~to~Customers}
+\end{equation}
+
+Where
+\begin{itemize}
+\item $StSF_{NG_{USA}}$ is the Site to Source Factor of Natural Gas for United States [-];
+\item PDU is the Pipeline and Distribution Use [million of $ft^3$]; 
+\item PFU is the Plant Fuel Use [million of $ft^3$];
+\item DC is the Delivery to Customers [million of $ft^3$].
+\end{itemize}
+
+\begin{equation}
+StSF_{NG_{CAN}} = \frac{ND}{D + E + DS + US}
+\end{equation}
+
+Where
+\begin{itemize}
+\item $StSF_{NG_{CAN}}$ is the Site to Source Factor of Natural Gas for Canada [-]
+\item ND is the Net Disposition [million of $m^3$]; 
+\item D are the Deliveries [million of $m^3$];
+\item E are the Exports [million of $m^3$].
+\item DS are the Direct Sales [million of $m^3$].
+\item US are the Utility Sales [million of $m^3$].
+\end{itemize}
+
+
+
+
+Para resolver
+\begin{itemize}
+\item ¿All the information I need to solve this equations will be in the Energy National Balance Mexico 2020?
+\end{itemize}
+
+
+Cost
+
+\begin{eqnarray*}
+Annual~Utility~Cost = \sum_{i=1}^{8760} (Elec_{i}^{Demand} - Elec_{i}^{Generation})
+\end{eqnarray*}
+
+\begin{eqnarray}
+\times Price_{Elec_{i}} + Electricity~Additional~Costs + NG~Costs = 0
+\end{eqnarray}
+
+Where
+\begin{itemize}
+\item $Elec_{i}^{Demand}$ is the electricity consumed for each hour in the year [kWh];
+
+\item $Elec_{i}^{Generation}$ is the renewable electricity generated for each hour in the year;
+
+\item $Price_{Elec_{i}}$ is the price of electricity for each hour in the year [\$];
+
+\item Electricity Additional Costs are the permissions for using the grid [\$];
+
+\item NG Costs are the cost of the Natural Gas [\$].
+\end{itemize}
+
+
+To solve
+\begin{itemize}
+\item  Fee where the new building is located.
+\item Electricity Additional Costs that may exist.
+\item LP Gas costs for the building (CRE website).
+
+\end{itemize}
+
+Emission
+
+\begin{equation}
+Res_{size} =\frac{Elec \times AEF_{Elec} \times NG \times EF_{NG}}{DCF \times AEF_{Elec} + (1-DCF) \times MEF_{Elec}}
+\end{equation}
+
+Where
+\begin{itemize}
+\item $AEF_Elec$ is the Electricity Average Emission Factor [-]; 
+\item $EF_NG$ is the Natural gas emission factor [-];
+\item DCF is the Directly Consumed Fraction [-];
+\item $MEF_Elec$ is the Electricity Marginal Emission Factor [-].
+
+\end{itemize}
+
+\begin{equation}
+DCF = \frac{DCRE}{TREG}
+\end{equation}
+
+Where
+\begin{itemize}
+\item DCF is the Directly Consumed Fraction [-]
+\item DCRE is the Directly Consumed Renewable Electricity [kWh]; 
+\item TREG is the Total Renewable Electricity Generated [kWh].
+\end{itemize}
+
+To solve
+\begin{itemize}
+\item Mexico has an Electricity Average Emission Factor $(AEF_Elec)$.
+\item This document show the  Emission Factor (EF) of several fuels for Mexico.
+\item The only data that i can not find is the Electricity Marginal Emission Factor.
+\item DCF can be calculated with de notebook's code.
+
+\end{itemize}
+\begin{enumerate}
+\end{enumerate}
+\item Once all the information is collected, the simulation starts.
+
+\item The output information from the simulation is exported to the notebook to solve the four definitions.
+
+\item Calculate the evaluation parameters for each definition.
+
+\begin{equation}
+RER = \frac{TREG}{TSEU}
+\end{equation}
+
+Where
+\begin{itemize}
+\item RER is the Renewable Energy Ratio [-]; 
+\item TSEU is the Total Site Energy Use [kWh].
+\end{itemize}
+
+\begin{equation}
+RF = \frac{DCRE}{TSEU}
+\end{equation}
+
+Where
+\begin{itemize}
+\item RF is the Resiliency Factor [-].
+\end{itemize}
+
+\item Strategies for passive design, energy efficiency measures and renewable generation that must be implemented in the building to make possible each of the following scenarios:
+
+ \begin{itemize}
+ \item The nearest definition to achieve (in case no definition is achieved).
+ \item Each definition.
+ \item All the definitions together.
+ \end{itemize}
+ 
+ \item ePMV is evaluated for each scenario.
+
+\end{enumerate}
+
+strategies for passive design, energy efficiency and renewable generation
+
+
+
+
+
+
+
+
+
+
 
 
 \chapter{Study case}
